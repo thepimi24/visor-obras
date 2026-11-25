@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visor de obra · datos de ejemplo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="barra">
+      <p class="marca">Visor de obra</p>
+      <p class="marca-nota">Datos de ejemplo del esquema E/R. Condominio Los Robles y Residencia Plaza del Este.</p>
+      <nav class="nav" aria-label="Secciones">
+        <button type="button" data-vista="proyectos" aria-current="page">Proyectos</button>
+        <button type="button" data-vista="obras">Obras</button>
+        <button type="button" data-vista="inmuebles">Inmuebles</button>
+        <button type="button" data-vista="zonas">Áreas y espacios</button>
+        <button type="button" data-vista="afectaciones">Afectaciones</button>
+      </nav>
+      <p class="fuente">Node API · SQLite · proyecto_demo.db</p>
+    </aside>
+    <main class="lienzo" id="lienzo">
+      <p class="cargando">Cargando los datos de ejemplo…</p>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

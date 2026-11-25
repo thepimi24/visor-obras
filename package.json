@@ -1,0 +1,19 @@
+{
+  "name": "visor-obras",
+  "version": "1.0.0",
+  "description": "API REST Node.js sobre el esquema SQLite de proyectos, obras e inmuebles",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
