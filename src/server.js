@@ -10,6 +10,7 @@ import obras from "./routes/obras.js";
 import inmuebles from "./routes/inmuebles.js";
 import afectaciones from "./routes/afectaciones.js";
 import datos from "./routes/datos.js";
+import { requireApiKey } from "./middleware/auth.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const STATIC = path.join(__dirname, "..", "static");
@@ -20,6 +21,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use("/api", requireApiKey);
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, servicio: "visor-obras" });
