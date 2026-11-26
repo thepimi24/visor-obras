@@ -1,6 +1,13 @@
 node_modules/
 .DS_Store
 *.log
+
 .env
 .env.*
 !.env.example
+
+# Bases SQLite con datos reales / locales
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
